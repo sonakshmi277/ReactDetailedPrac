@@ -1,7 +1,7 @@
-import List_Keys from "./lists_Keys"
+import UseEffect from "./useEffect"
 function App() {
   return (
-   <List_Keys/>
+   <UseEffect/>
   );
 }
 
