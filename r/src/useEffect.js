@@ -1,15 +1,15 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function UseEffect() {
-    const [ct,setCount]=useState(0);
-    const [tot,setTotal]=useState(1);
+    const [ct, setCount] = useState(0);
+    const [tot, setTotal] = useState(1);
 
-    function handleTotal(){
-        setTotal(tot+1);
+    function handleTotal() {
+        setTotal(tot + 1);
     }
 
-    function handleCount(){
-        setCount(ct+1);
+    function handleCount() {
+        setCount(ct + 1);
     }
     //variation 1
     /*  useEffect(()=>{
@@ -32,11 +32,11 @@ function UseEffect() {
     }, [ct, tot])
     return (
         <div>
-            <button onClick={handleCount} style={{color:"black",backgroundColor:"yellow"}}>Click me to increase count</button>
-            <h1 style={{color:'white'}}>Current value of count is {ct}</h1>
-        
-            <button onClick={handleTotal} style={{color:"black",backgroundColor:"yellow"}}>Click me to increase total</button>
-            <h1 style={{color:'white'}}>Current value of count is {tot}</h1>
+            <button onClick={handleCount} style={{ color: "black", backgroundColor: "yellow" }}>Click me to increase count</button>
+            <h1 style={{ color: 'white' }}>Current value of count is {ct}</h1>
+
+            <button onClick={handleTotal} style={{ color: "black", backgroundColor: "yellow" }}>Click me to increase total</button>
+            <h1 style={{ color: 'white' }}>Current value of count is {tot}</h1>
         </div>
     )
 }
