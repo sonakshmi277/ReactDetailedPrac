@@ -11,7 +11,7 @@ import Navbar from "./Navbar";
 // step 4: consumer consume kar lega value 
 
 
-const router = createBrowserRouter([
+const router= createBrowserRouter([
   {
     path: "/",
     element:
@@ -19,8 +19,7 @@ const router = createBrowserRouter([
         <Navbar />
       </div>
   },
-  {
-    path: "/about",
+  {path: "/about",
     element:
       <div>
         <About />
