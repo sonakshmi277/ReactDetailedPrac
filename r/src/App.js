@@ -10,6 +10,7 @@ import Navbar from "./Navbar";
 //step 3: pass value
 // step 4: consumer consume kar lega value 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
